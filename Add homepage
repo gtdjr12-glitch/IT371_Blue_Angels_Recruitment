@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Angels Enlisted Recruitment Information</title>
+</head>
+<body>
+  <header>
+    <h1>Blue Angels Enlisted Recruitment Information</h1>
+    <p>An unofficial class project for IT371: Web Design and Development.</p>
+  </header>
+
+  <nav>
+    <a href="#concept">Website Concept</a> |
+    <a href="#audience">Target Audience</a> |
+    <a href="#roles">Enlisted Roles</a> |
+    <a href="#resources">Resources</a>
+  </nav>
+
+  <main>
+    <section id="concept">
+      <h2>Website Concept</h2>
+      <p>
+        This website is designed to educate Sailors and Marines about enlisted
+        opportunities with the Blue Angels. The goal is to explain what different
+        enlisted jobs contribute, how those jobs support the demonstration mission,
+        and how interested service members can begin learning about the process.
+      </p>
+    </section>
+
+    <section id="audience">
+      <h2>Target Audience</h2>
+      <p>
+        The target audience includes active-duty Sailors and Marines who are
+        interested in learning more about enlisted opportunities on the team.
+      </p>
+    </section>
+
+    <section id="roles">
+      <h2>Enlisted Roles</h2>
+      <p>
+        Enlisted members support the mission through maintenance, administration,
+        logistics, supply, public affairs, and other important support functions.
+      </p>
+    </section>
+
+    <section id="resources">
+      <h2>Resources</h2>
+      <p>
+        This site is an unofficial educational project and does not replace official
+        Navy, Marine Corps, or Blue Angels guidance.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Greg Dungey - IT371 Class Project</p>
+  </footer>
+</body>
+</html>
