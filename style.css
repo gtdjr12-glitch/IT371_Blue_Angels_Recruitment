@@ -53,8 +53,8 @@ nav a:hover {
 
 .banner {
   width: 100%;
-  max-width: 800px;
-  max-height: 420px;
+  max-width: 1000px;
+  max-height: 380px;
   object-fit: cover;
   display: block;
   margin: 20px auto;
