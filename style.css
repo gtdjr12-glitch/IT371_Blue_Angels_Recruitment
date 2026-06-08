@@ -116,3 +116,27 @@ footer {
   font-size: 0.9rem;
   border-top: 4px solid #f7c600;
 }
+
+.toggle-btn {
+  background-color: #002f6c;
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  margin: 15px 0;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #004b9b;
+}
+
+.extra-info {
+  display: none;
+  background-color: #f2f2f2;
+  border-left: 5px solid #f7c600;
+  padding: 15px;
+  margin: 10px 0 20px 0;
+  border-radius: 6px;
+}
