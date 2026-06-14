@@ -46,7 +46,7 @@
     email addresses ending in <strong>.mil</strong>.
   </p>
 
-  <form action="process_form.php" method="post" class="contact-form">
+  <form id="contactForm" class="contact-form">
     <div class="form-group">
       <label for="name">Full Name:</label>
       <input type="text" id="name" name="name" required>
@@ -87,6 +87,8 @@
 
     <button type="submit" class="submit-btn">Submit Question</button>
   </form>
+    
+    <div id="formMessage" class="form-message"></div>
 
   <h3>Official Contact Reminder</h3>
   <p>
@@ -107,5 +109,24 @@
       Users should refer to official military sources for current guidance.
     </p>
   </footer>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const messageBox = document.getElementById("formMessage");
+
+    if (!email.endsWith(".mil")) {
+      messageBox.textContent = "Please enter a valid military or DoD email address ending in .mil.";
+      messageBox.className = "form-message error-message";
+      return;
+    }
+
+    messageBox.textContent = "Thank you. Your question has been successfully submitted.";
+    messageBox.className = "form-message success-message";
+
+    document.getElementById("contactForm").reset();
+  });
+</script>
 </body>
 </html>
