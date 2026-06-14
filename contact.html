@@ -31,22 +31,70 @@
   <img src="images/wrench.jpg" alt="Blue Angels maintainer working on aircraft equipment" class="page-image">
   <!-- Main content for this page -->
   <main>
-  <section>
+  <section class="content-card">
     <h2>Contact Information</h2>
 
-    <p>
-      For real Blue Angels recruiting or application questions, visitors should use
-      the official Blue Angels website:
-      <a href="https://www.blueangels.navy.mil/join/" target="_blank">
-        Blue Angels Join the Team
-      </a>.
-    </p>
+  <p>
+    This contact page is intended for general questions about enlisted opportunities,
+    requirements, and where to find additional guidance. This website is an unofficial
+    IT371 class project and does not represent the official views of the U.S. Navy,
+    U.S. Marine Corps, Department of Defense, or the Blue Angels.
+  </p>
 
-    <p>
-      This website should not be used to submit real applications or request
-      official recruiting information.
-    </p>
-  </section>
+  <p>
+    For security and screening purposes, this form only accepts military or DoD-style
+    email addresses ending in <strong>.mil</strong>.
+  </p>
+
+  <form action="process_form.php" method="post" class="contact-form">
+    <div class="form-group">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">DoD Email Address:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="example@navy.mil" 
+        pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.mil$"
+        required>
+    </div>
+
+    <div class="form-group">
+      <label for="command">Command or Organization:</label>
+      <input type="text" id="command" name="command" required>
+    </div>
+
+    <div class="form-group">
+      <label for="topic">Question Topic:</label>
+      <select id="topic" name="topic" required>
+        <option value="">Select a topic</option>
+        <option value="Enlisted Opportunities">Enlisted Opportunities</option>
+        <option value="Application Requirements">Application Requirements</option>
+        <option value="Career Guidance">Career Guidance</option>
+        <option value="Official Resources">Official Resources</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Question:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Question</button>
+  </form>
+
+  <h3>Official Contact Reminder</h3>
+  <p>
+    Anyone looking for official information should visit the official Blue Angels website
+    or speak with their chain of command, command career counselor, or official Navy and
+    Marine Corps resources.
+  </p>
+</section>
 </main>
   <!-- Footer with copyright information and class project disclaimer -->
   <footer>
