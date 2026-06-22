@@ -209,3 +209,10 @@ footer {
   color: #8a1f11;
   border-left: 5px solid #8a1f11;
 }
+
+video {
+  max-width: 100%;
+  border: 2px solid #f7c600;
+  border-radius: 6px;
+  margin-top: 15px;
+}
